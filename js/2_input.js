@@ -1,4 +1,4 @@
-// методи --> window.confirm() i window.prompt()
+// // методи //--> window.confirm() i window.prompt()
 
 
 // const shoudRenew = confirm('asd?');
