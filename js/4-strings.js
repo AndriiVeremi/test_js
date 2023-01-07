@@ -76,11 +76,12 @@ let brend = 'SamSunG';
 
 // //------- Пошук в рядку метод includes()
 
-const blacklistedWord1 = 'спам';
-const blacklistedWord2 = 'акція';
+// const blacklistedWord1 = 'спам';
+// const blacklistedWord2 = 'акція';
 
-const string1 = 'Привіт, мене звати Абдул, це не спам, виграй міліон';
-const string2 = 'Велика акція, якої ще не було!';
-const string3 = 'Рекламна компанія #fatlives';
+// const string1 = 'Привіт, мене звати Абдул, це не спам, виграй міліон';
+// const string2 = 'Велика АКЦІЯ, якої ще не було!';
+// const string3 = 'Рекламна компанія #fatlives';
 
-console.log(string1.includes(blacklistedWord1));
+// console.log(string1.includes(blacklistedWord1));  // ----> перевіряємо в рядку string1 чи є там таке слово яке записане в змінній acklistedWord1 і повертає нам false або true
+// console.log(string2.toLowerCase().includes(blacklistedWord2)); // ----> робить нормалізацію string2 потім перевіряє чи рядку string2 є там таке слово яке записане в змінній acklistedWord2 і повертає нам false або true
