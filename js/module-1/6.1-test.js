@@ -50,6 +50,6 @@
 // // є 3 типи підпискі free, pro, vip
 // // доступ можуть получити тільки pro, vip
 
-const sub = 'pro';   
-const canAccessContent = sub === 'pro' || sub === 'vip';
-console.log(' Чие доступ до контенту?', canAccessContent);
+// const sub = 'pro';   
+// const canAccessContent = sub === 'pro' || sub === 'vip';
+// console.log(' Чие доступ до контенту?', canAccessContent);
