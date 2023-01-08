@@ -85,3 +85,7 @@ let brend = 'SamSunG';
 
 // console.log(string1.includes(blacklistedWord1));  // ----> перевіряємо в рядку string1 чи є там таке слово яке записане в змінній acklistedWord1 і повертає нам false або true
 // console.log(string2.toLowerCase().includes(blacklistedWord2)); // ----> робить нормалізацію string2 потім перевіряє чи рядку string2 є там таке слово яке записане в змінній acklistedWord2 і повертає нам false або true
+
+
+
+

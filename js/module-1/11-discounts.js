@@ -45,74 +45,42 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-//     // Change code below this line
-
-    
-//     let totalPrice = 0;
-//     let message;
-
-//     if (orderedQuantity === 2) {
-//         deliveryFee = 50;
-//     } else if (orderedQuantity === 4) {
-//         deliveryFee = 100;
-//     } else if (orderedQuantity === 10) {
-//         deliveryFee = 200;
-//     }
-
-//     totalPrice = (pricePerDroid * orderedQuantity) + deliveryFee;
-
-//     message = `You ordered droids worth ${totalPrice} credits.Delivery ( ${deliveryFee} credits) is included in total price.`;
-   
-//     console.log(message);
-
-//     // Change code above this line
-//     return message;
-     
-// }
-
-// makeOrderMessage(2, 100, 50);
-
-
-
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+function checkStorage(available, ordered) {
+    let message;
     // Change code below this line
-    const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
-    const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+
+    if (ordered > available) {
+        message = "Not enough goods in stock!";
+    } else {
+        message = "The order is accepted, our manager will contact you";
+    }
 
     // Change code above this line
     return message;
 }
 
-console.log(makeOrderMessage(2, 100, 50));
-makeOrderMessage(4, 300, 100);
-console.log("You ordered droids worth 1300 credits. Delivery (100 credits) is included in total price.");
-console.log('You ordered droids worth 900 credits. Delivery (200 credits) is included in total price.');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

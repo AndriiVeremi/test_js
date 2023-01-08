@@ -134,3 +134,113 @@
 //         message = 'З вами сконтактується менеджер';
 // }
 // console.log(message);
+
+
+
+
+
+
+
+
+
+
+function getShippingCost(country) {
+    let message;
+    // Change code below this line
+
+    switch (country) {
+        
+        case "China":
+            message = "Shipping to China will cost 100 credits";
+            break;
+        case "Chile":
+            message = "Shipping to Chile will cost 250 credits";
+            break;
+        case "Australia":
+            message = "Shipping to Australia will cost 170 credits";
+            break;
+        case "Jamaica":
+            message = "Shipping to Jamaica will cost 120 credits";
+            break;
+        default:
+            message = "Sorry, there is no delivery to your country";
+    }
+
+    // Change code above this line
+    return message;
+}
+
+
+
+
+
+
+
+
+
+
+function getSubscriptionPrice(type) {
+    let price;
+    // Change code below this line
+
+    switch (type) {
+
+        case "starter":
+            price = 0;
+            break;
+        case "professional":
+            price = 20;
+            break;
+        case "organization":
+            price = 50;
+            break;
+    }
+
+    // Change code above this line
+    return price;
+}
+getSubscriptionPrice("professional");
+
+
+
+
+function checkPassword(password) {
+    const ADMIN_PASSWORD = "jqueryismyjam";
+    let message;
+    // Change code below this line
+
+
+    if (password === null) {
+        message = "Canceled by user!";
+    } else if (password === ADMIN_PASSWORD) {
+        message = "Welcome!";
+    } else {
+        message = "Access denied, wrong password!";
+    }
+
+    // Change code above this line
+    return message;
+}
+
+
+function checkPassword(password) {
+    const ADMIN_PASSWORD = "jqueryismyjam";
+    let message;
+    // Change code below this line
+
+
+    switch (password) {
+        case null:
+            message = "Canceled by user!";
+            break;
+        case "jqueryismyjam":
+            message = "Welcome!";
+            break;
+        default:
+            message = "Access denied, wrong password!";
+            break;
+    }
+
+    // Change code above this line
+    return message;
+}
