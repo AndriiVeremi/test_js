@@ -25,3 +25,5 @@
 
 // console.log(!true); // верне false
 // console.log(!5); // з початку переводить в буль і отримаємо true а тоді робить інверсію true ---> false і вертає false.
+
+
