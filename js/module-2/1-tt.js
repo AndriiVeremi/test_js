@@ -18,27 +18,52 @@
 // }
 
 
-function checkPassword(password) {
-    const ADMIN_PASSWORD = "jqueryismyjam";
-    // Change code below this line
+// function checkPassword(password) {
+//     const ADMIN_PASSWORD = "jqueryismyjam";
+//     // Change code below this line
 
-    let message;
-    console.log(message);
-    if (password === ADMIN_PASSWORD) {
-        message = "Welcome!";
-        return;   
-    }
+//     let message;
+//     console.log(message);
+//     if (password === ADMIN_PASSWORD) {
+//         message = "Welcome!";
+//         return;
+//     }
 
-    if (password != ADMIN_PASSWORD) {
-        message = "Access denied, wrong password!";
-        return;
-    }
+//     if (password != ADMIN_PASSWORD) {
+//         message = "Access denied, wrong password!";
+//         return;
+//     }
 
-    message = "Access denied, wrong password!";
-    console.log(message);
-    return message;
-    // Change code above this line
+//     message = "Access denied, wrong password!";
+//     console.log(message);
+//     return message;
+//     // Change code above this line
 
     
+// }
+
+
+
+function checkPassword(password) {
+    const ADMIN_PASSWORD = "jqueryismyjam";
+    
+    // Change code below this line
+
+    if (ADMIN_PASSWORD === password) {
+        message = 'Welcome!';
+        console.log(message)
+        return;
+
+    }
+    message = 'Access denied, wrong password!';
+    
+    console.log(message)
+    
+    return message;
+
+    // Change code above this line
 }
+
 checkPassword("mangohackzor");
+checkPassword("polyhax");
+checkPassword("jqueryismyjam")
