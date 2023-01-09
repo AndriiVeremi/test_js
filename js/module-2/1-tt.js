@@ -1,3 +1,5 @@
+"use strict"
+
 // if (password === ADMIN_PASSWORD) {
 //     message = "Welcome!";
 //     return;
