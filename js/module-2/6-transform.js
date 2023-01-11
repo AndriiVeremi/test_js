@@ -15,3 +15,16 @@ console.log(string);
 
 
 // // join() ----------------------
+
+
+
+
+
+
+
+
+let link = 'https://my-site.com'
+
+link += !link.endsWith('/') && link.includes('my-site') ? '/' : '';
+
+
