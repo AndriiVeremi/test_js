@@ -43,6 +43,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // function makeArray(firstArray, secondArray, maxLength) {
 //     // Change code below this line
 //     let newArray = '';
@@ -103,48 +115,40 @@
 
 
 
-// const numbers = [51, 18, 13, 24, 7, 85, 19];
-// let smallestNumber = numbers[0]; // створюю змінну щоб зберігати найменше число і ставлю перший 1тем масиву як найменьше число
 
-// for (const number of numbers) { // перебераю всі числа
-//     console.log();
-//     if (number < smallestNumber) { // тут рівняю їх з найменьшим яке я поставив (перший ітем масиву)
-//         smallestNumber = number;  // якщо воно меньше ніж smallestNumber то записую в змінну
-//     }
-// }
-// console.log( 'найменьше число 'smallestNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // function filterArray(numbers, value) {
 //     // Change code below this line
-//     // let bigNumber = 0;
-   
-//     for (const number of numbers) {
-//         if (value < number) { 
-//             // bigNumber = number; 
-//             console.log(number);    
-//     }
-//     }
-//     // console.log(bigNumber);
 
+//     let bigNumber = [];
+//     for (const number of numbers) {
+//         if (value < number) {
+//             bigNumber.push(number);
+//         }
+//     }
+//     console.log(bigNumber);
+//     return bigNumber;
 //     // Change code above this line
 // }
-// filterArray([1, 2, 3, 4, 5], 3)
 
-
-
-function filterArray(numbers, value) {
-    // Change code below this line
-    let bigNumber = [];
-    for (const number of numbers) {
-        if (value < number) {
-            
-            bigNumber.push(number);
-            console.log(number);
-        }
-    }
-    console.log(bigNumber);
-    // Change code above this line
-}
-
-filterArray([1, 2, 3, 4, 5], 5);
+// filterArray([1, 2, 3, 4, 5], 5);
