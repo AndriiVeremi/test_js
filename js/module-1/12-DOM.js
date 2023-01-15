@@ -26,18 +26,18 @@
 
 
 
-function checkForSpam(message) {
-    let result;
-    // Change code below this line
+// function checkForSpam(message) {
+//     let result;
+//     // Change code below this line
 
-    result = message.toLowerCase();
-    console.log(result);
-    result = result.includes("spam") || result.includes("sale");
-    console.log(result);
-    // Change code above this line
-    return result;
-}
+//     result = message.toLowerCase();
+//     console.log(result);
+//     result = result.includes("spam") || result.includes("sale");
+//     console.log(result);
+//     // Change code above this line
+//     return result;
+// }
 
-checkForSpam("Get rid of sPaM emails. Our book in on sale!")
+// checkForSpam("Get rid of sPaM emails. Our book in on sale!")
 
 // result = message.toLowerCase().includes('spam', 'sale');
