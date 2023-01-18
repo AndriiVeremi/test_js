@@ -70,22 +70,36 @@
 
 
 
-function getEvenNumbers(start, end) {
-    const total = [];
+// function getEvenNumbers(start, end) {
+//     const total = [];
 
-    for (let i = start; i <= end; i += 1) {
-        if (i % 2 === 0) {
-            total.push(i);
-        }
+//     for (let i = start; i <= end; i += 1) {
+//         if (i % 2 === 0) {
+//             total.push(i);
+//         }
        
-    }
-    return total;
+//     }
+//     return total;
+// }
+// console.log(getEvenNumbers(2, 5));
+// console.log(getEvenNumbers(3, 11));
+
+
+const apartment = {
+    descr: "Spacious apartment in the city center",
+    rating: 4,
+    price: 2153,
+};
+const keys = [];
+const values = [];
+// Change code below this line
+
+for (const key in apartment) {
+    // keys += key;
+    // values += apartment[key];
+    console.log(apartment[key]);
+    console.log(key);
 }
-console.log(getEvenNumbers(2, 5));
-console.log(getEvenNumbers(3, 11));
-
-
-
 
 
 
