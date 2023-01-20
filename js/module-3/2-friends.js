@@ -78,19 +78,21 @@ const friends = [
 
 // // Получаєм всіх друзів які офлайн і офлайн
 
-const getFriendsByOnlineStatus = function (allFriends) {
-    const friendsStats = {
-        online: [],
-        offline: []
-    }
+// const getFriendsByOnlineStatus = function (allFriends) {
+//     const friendsStats = {
+//         online: [],
+//         offline: []
+//     }
 
-    for (const friend of friends) {
-        if (friend.online) {
-            friendsStats.online.push(friend);
-            continue;
-        }
+//     for (const friend of friends) {
+//         if (friend.online) {
+//             friendsStats.online.push(friend);
+//             continue;
+//         }
 
-        friendsStats.offline.push(friend);
-    }
-    return friendsStats;
-};
+//         friendsStats.offline.push(friend);
+//     }
+//     return friendsStats;
+// };
+
+
