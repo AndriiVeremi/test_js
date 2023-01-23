@@ -34,11 +34,11 @@ const signupData = {
 // Вичесляемие свойства
 
 /* <input name="color" value="tomato"; */
-const intupName = 'color';
+const inputName = 'color';
 const inputValue = 'tomato';
 
 const colorPickerData = {
-    [intupName]: inputValue, // бере ключ зі зіміної [змінна]
+    [inputName]: inputValue, // бере ключ зі зіміної [змінна]
 }
 
 

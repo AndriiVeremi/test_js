@@ -143,7 +143,7 @@ const playlist = {
 // // або
 
 // const showProfileInfo = function ({ name, tag, location, avatar, stats: { followers, views, likes }, }) {
-//     console.log(userProfile);  
+//     console.log(userProfile);
 // };
 
 // // або
@@ -170,31 +170,31 @@ const playlist = {
 
 
 
-const forecast = {
-    today: {
-        low: 28,
-        high: 32,
-        icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
-    },
-    tomorrow: {
-        low: 27,
-        high: 31,
-    },
-};
-// Change code below this line
+// const forecast = {
+//     today: {
+//         low: 28,
+//         high: 32,
+//         icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//     },
+//     tomorrow: {
+//         low: 27,
+//         high: 31,
+//     },
+// };
+// // Change code below this line
 
-const {
-    today: {
-        low: highToday,
-        high: lowToday,
-        icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
-    },
-    tomorrow: {
-        low: highTomorrow,
-        high: lowTomorrow,
-        icon: tomorrowIcon,
-    },
-} = forecast;
+// const {
+//     today: {
+//         low: highToday,
+//         high: lowToday,
+//         icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//     },
+//     tomorrow: {
+//         low: highTomorrow,
+//         high: lowTomorrow,
+//         icon: tomorrowIcon,
+//     },
+// } = forecast;
 
 // const highToday = forecast.today.high;
 // const lowToday = forecast.today.low;
@@ -203,3 +203,134 @@ const {
 // const highTomorrow = forecast.tomorrow.high;
 // const lowTomorrow = forecast.tomorrow.low;
 // const tomorrowIcon = forecast.tomorrow.icon;
+
+
+
+// function addOverNum(num, ...args) {
+//     let total = 0;
+
+//     for (const arg of args) {
+//         if (arg > num) {
+//             total += arg;
+//         }
+//     }
+
+//     return total
+//     // Change code above this line
+// }
+
+
+// addOverNum(50, 15, 27);
+// addOverNum(10, 12, 4, 11, 48, 10, 8);
+
+
+
+// const atTheOldToad = {
+//     potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     removePotion(potionName) {
+//         // Change code below this line
+
+//         const potionIndex = this.potions.indexOf(potionName);
+//         this.potions.splice(potionIndex, 1);
+//     },        // Change code above this line
+
+// };
+
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+
+
+
+
+
+
+
+
+
+
+
+
+// третя авто перевірка 41 питання
+
+
+const atTheOldToad = {
+    potions: [
+        { name: "Speed potion", price: 460 },
+        { name: "Dragon breath", price: 780 },
+        { name: "Stone skin", price: 520 },
+    ],
+
+
+    // Change code below this line
+    getPotions() {
+        return this.potions;
+    },
+    addPotion(newPotion) {
+        if (this.potions.includes(newPotion)) {
+            return `Error! Potion ${newPotion} is already in your inventory!`;
+        }
+
+        this.potions.push(newPotion);
+    },
+    removePotion(potionName) {
+        const potionIndex = this.potions.indexOf(potionName);
+
+        if (potionIndex === -1) {
+            return `Potion ${potionName} is not in inventory!`;
+        }
+
+        this.potions.splice(potionIndex, 1);
+    },
+    updatePotionName(oldName, newName) {
+        const potionIndex = this.potions.indexOf(oldName);
+
+        if (potionIndex === -1) {
+            return `Potion ${oldName} is not in inventory!`;
+        }
+
+        this.potions.splice(potionIndex, 1, newName);
+    },
+
+
+    // Change code above this line
+};
+
+
+0
+
+
+getPotions() {
+    return this.potions;
+},
+addPotion(newPotion) {
+    for (const item of this.potions) {
+        if (item.name === newPotion.name) {
+            return `Error! Potion ${newPotion.name} is already in your inventory!`;
+        }
+    }
+    const newProduct = {
+        ...newPotion,
+    };
+
+    this.potions.push(newPotion);
+},
+removePotion(potionName) {
+    for (let i = 0; i < this.potions.length; i += 1) {
+        const potion = this.potions[i];
+        if (potionName === potion.name) {
+            this.potions.splice(i, 1);
+        }
+    }
+},
+updatePotionName(oldName, newName) {
+    let resalt = `Potion ${oldName} is not in inventory`;
+    for (let i = 0; i < this.potions.length; i += 1) {
+        const potion = this.potions[i];
+
+        if (oldName === potion.name) {
+            potion.name = newName;
+            resalt = `Found ${oldName} change to ${newName} `;
+        }
+    }
+    return console.log(resalt);
+},
+
