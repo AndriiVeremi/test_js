@@ -138,19 +138,3 @@
 
 
 
-function deliverPizza(pizzaName) {
-    return `Delivering ${pizzaName} pizza.`;
-}
-
-function makePizza(pizzaName) {
-    return `Pizza ${pizzaName} is being prepared, please wait...`;
-}
-
-// Chande code below this line
-function makeMessage(pizzaName) {
-    return;
-}
-
-
-makeMessage("Royal Grand", makePizza)      //"Pizza Royal Grand is being prepared, please wait..."
-makeMessage("Ultracheese", deliverPizza) // "Delivering Ultracheese pizza."
