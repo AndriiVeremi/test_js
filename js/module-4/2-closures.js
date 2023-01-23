@@ -55,19 +55,39 @@ poly('чай');
 
 // округлятор ------------------------------------
 
-const floatingPoint = 3.4566565;
-const someInt = Math.round(floatingPoint);
-const withDecimals = Number(floatingPoint.toFixed(2));
+// const floatingPoint = 3.4566565;
+// const someInt = Math.round(floatingPoint);
+// const withDecimals = Number(floatingPoint.toFixed(2));
 
-function rounder(places) {
-    return function (num) {
-        return Number(num.toFixed(places));
+// const rounder = function (number, places) {
+//     return Number(number.toFixed(places));
+// };
+
+// console.log(rounder(3.434333));
+
+// function rounder(places) {
+//     return function (number) {
+//         return Number(number.toFixed(places));
+//     };
+// }
+
+// const rounder2 = rounder(2);
+// const rounder3 = rounder(3);
+
+// // rounder2(floatingPoint);
+// // rounder3(floatingPoint);
+
+
+
+
+const rounder = function (places) {
+    return function (places) {
+        return Number(number.toFixed(places));
     };
-}
+};
 
 const rounder2 = rounder(2);
 const rounder3 = rounder(3);
 
-rounder2(floatingPoint);
-rounder3(floatingPoint);
-
+console.log(rounder2(3.4225));
+console.log(rounder3(5.1325));
