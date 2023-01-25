@@ -78,7 +78,7 @@ poly('чай');
 // // rounder3(floatingPoint);
 
 
-
+// або
 
 const rounder = function (places) {
     return function (places) {
@@ -91,3 +91,27 @@ const rounder3 = rounder(3);
 
 console.log(rounder2(3.4225));
 console.log(rounder3(5.1325));
+
+
+
+// Привітні дані і функції --------------------
+
+const salaryManagerFactory = function (employeeName, baseSalary) {
+    let salary = baseSalary;
+
+    const chngeBy = function (amount) {
+        salary += amount;
+    };
+
+    return {
+        raise(amount) {
+            changeBy(amount);
+        },
+        lower(amount) {
+            changeBy(amount);
+        },
+        current() {
+            return `Поточна зарплата ${employeeName} - ${salary}`;
+        },
+    };
+};

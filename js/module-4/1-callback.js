@@ -16,32 +16,70 @@
 // // fnB - калбек функція
 
 
-// // функція doMath(a, b, callback)
 
-// const doMath = function (a, b, callback) {
-//     const resuls = callback(a, b);
-//     console.log(resuls);
-// };
 
-// const add = function (x, y) {
-//     return x + y;
-// };
 
-// const sub = function (x, y) {
-//     return x - y;
-// };
 
-// doMath(2, 3, add);
-// doMath(10, 8, sub);
 
-// // Або можна передати функцію разом з викликом
+function makePizza(pizzaName, callback) {
+    console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+    callback(pizzaName);
+}
 
-// doMath(2, 3, add = function (x, y) {  // це Інлайн функція
-//     return x + y;
-// });
-// doMath(10, 8, const sub = function (x, y) {  // це Інлайн функція
-//     return x - y;
-// });
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+    console.log(`Delivering pizza ${pizzaName}.`);
+});
+// Change code below this line
+
+// Передаємо інлайн-функцію greet у якості колбека
+makePizza("Ultracheese", function eatPizza(pizzaName) {
+    console.log(`Eating pizza ${pizzaName}.`);
+});
+
+makePizza("Ultracheese");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// функція doMath(a, b, callback)
+
+const doMath = function (a, b, callback) {
+    const resuls = callback(a, b);
+    console.log(resuls);
+};
+
+const add = function (x, y) {
+    return x + y;
+};
+
+const sub = function (x, y) {
+    return x - y;
+};
+
+doMath(2, 3, add);
+doMath(10, 8, sub);
+
+// Або можна передати функцію разом з викликом
+
+doMath(2, 3, add = function (x, y) {  // це Інлайн функція
+    return x + y;
+});
+doMath(10, 8, const sub = function (x, y) {  // це Інлайн функція
+    return x - y;
+});
 
 
 
