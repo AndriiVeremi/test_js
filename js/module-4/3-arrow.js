@@ -90,45 +90,88 @@
 // console.log(r3a);
 
 
-function calculateTotalPrice(orderedItems) {
-    let totalPrice = 0;
-    // Change code below this line
-
-    for (let i = 0; i < orderedItems.length; i += 1) {
-        totalPrice += orderedItems[i];
-    }
-
-
-    // Метод перебирання forEach
-    orderedItems.forEach(function (orderedItems) {
-        totalPrice += orderedItems;
-    });
-
-    // Change code above this line
-    return totalPrice;
-}
-
-
-
-function filterArray(numbers, value) {
-    const filteredNumbers = [];
-    // Change code below this line
-
-
-    numbers.forEach(function (numbers, value) {
-        filteredNumbers.push(number);
-    });
 
 
 
 
-//---------------------------------------
-    for (let i = 0; i < numbers.length; i += 1) {
-        if (numbers[i] > value) {
-            filteredNumbers.push(numbers[i]);
-        }
-    }
 
-    // Change code above this line
-    return filteredNumbers;
-}
+const books = [
+    {
+        title: "The Last Kingdom",
+        author: "Bernard Cornwell",
+        genres: ["adventure", "history"],
+    },
+    {
+        title: "Beside Still Waters",
+        author: "Robert Sheckley",
+        genres: ["fiction"],
+    },
+    {
+        title: "Redder Than Blood",
+        author: "Tanith Lee",
+        genres: ["horror", "mysticism"],
+    },
+];
+// Change code below this line
+
+const genres = books.flatMap(books => books.genres);
+
+
+
+
+
+
+const students = [
+    { name: "Манго", courses: ["математика", "фізика"] },
+    { name: "Полі", courses: ["інформатика", "математика"] },
+    { name: "Ківі", courses: ["фізика", "біологія"] },
+];
+
+students.map(student => student.courses);
+// [['математика', 'фізика'], ['інформатика', 'математика'], ['фізика', 'біологія']]
+
+students.flatMap(student => student.courses);
+// ['математика', 'фізика', 'інформатика', 'математика', 'фізика', 'біологія'];
+
+
+
+
+
+const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// Change code below this line
+
+const evenNumbers = numbers.filter(numbers => numbers % 2 === 0); 
+const oddNumbers = numbers.filter(numbers => numbers % 2 !== 0);
+
+
+students.flatMap(student =>const allGenres = books.flatMap(books => books.genres);
+    const uniqueGenres = allGenres.filter(.indexOf(books) => books === books);  
+
+
+
+
+const books = [
+    {
+        title: "The Last Kingdom",
+        author: "Bernard Cornwell",
+        genres: ["adventure", "history"],
+    },
+    {
+        title: "Beside Still Waters",
+        author: "Robert Sheckley",
+        genres: ["fiction", "mysticism"],
+    },
+    {
+        title: "Redder Than Blood",
+        author: "Tanith Lee",
+        genres: ["horror", "mysticism", "adventure"],
+    },
+];
+// Change code below this line
+const allGenres = books.flatMap(books => books.genres);
+const uniqueGenres = allGenres.filter(
+    (books) => books.indexOf(books) === books);  
+
+const uniqueCourses = allCourses.filter(
+    (course, index, array) => array.indexOf(course) === index
+);
