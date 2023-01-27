@@ -9,9 +9,10 @@ const numbers = [5, 10, 15, 20, 25];
 
 const filteredNumbers = numbers.filter(number => {
     // return number > 15;
-    return number < 10 || number > 20;;
+    return number < 10 || number > 20;
 });
 console.log(filteredNumbers);
+
 
 //--------------------------------------
 
