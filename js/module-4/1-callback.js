@@ -17,10 +17,6 @@
 
 
 
-
-
-
-
 function makePizza(pizzaName, callback) {
     console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
     callback(pizzaName);
@@ -37,20 +33,6 @@ makePizza("Ultracheese", function eatPizza(pizzaName) {
 });
 
 makePizza("Ultracheese");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
