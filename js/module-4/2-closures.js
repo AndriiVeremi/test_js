@@ -29,28 +29,28 @@
 //     console.log(`${sheffName} готовить ${dish}`);
 // }
 
-makeDish('Mango', 'пиріг');
-makeDish('Mango', 'яєшня');
-makeDish('Mango', 'чай');
+// makeDish('Mango', 'пиріг');
+// makeDish('Mango', 'яєшня');
+// makeDish('Mango', 'чай');
 
-makeDish('Poly', 'котлети');
-makeDish('Poly', 'спутник');
-makeDish('Poly', 'кава');
+// makeDish('Poly', 'котлети');
+// makeDish('Poly', 'спутник');
+// makeDish('Poly', 'кава');
 
-const makeSheff = function (name) {
-    const makeDish = function (dish) {
-        console.log(`${name} готовить ${dish}`);
-    };
-    return makeDish;
-};
+// const makeSheff = function (name) {
+//     const makeDish = function (dish) {
+//         console.log(`${name} готовить ${dish}`);
+//     };
+//     return makeDish;
+// };
 
-const mango = makeSheff('Mango');
-mango('котлети');
+// const mango = makeSheff('Mango');
+// mango('котлети');
 
-console.dir(mango);
+// console.dir(mango);
 
-const poly = makeSheff('poly');
-poly('чай');
+// const poly = makeSheff('poly');
+// poly('чай');
 
 
 // округлятор ------------------------------------
