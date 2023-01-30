@@ -1,6 +1,6 @@
 // // Array.prototype.map()
 // // Поелементно перебирає масив
-// // Не змінює оригінальний масивВертає новий масив
+// // Не змінює оригінальний масив Вертає новий масив
 // // вертає новий масив такої самої довжини
 
 // const numbers = [5, 10, 15, 20, 25];
@@ -31,7 +31,7 @@ const players = [
 // // Получаєм масив імен всіх іграків
 
 // const playerNames = players.map(player => {
-//     return player.name;
+//     return playerNames;
 // });
 // console.log(playerNames);
 
