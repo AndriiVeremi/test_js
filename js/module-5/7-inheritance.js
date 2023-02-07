@@ -3,39 +3,39 @@
 //  - super()
 
 
-class Hero {
-    constructor(name = 'hero', xp = 0) {
-        this.name = name;
-        this.xp = xp;
-    }
-    gainXp(amount) {
-        this.xp += amount;
-    }
-}
+// class Hero {
+//     constructor(name = 'hero', xp = 0) {
+//         this.name = name;
+//         this.xp = xp;
+//     }
+//     gainXp(amount) {
+//         this.xp += amount;
+//     }
+// }
 
-class Warrior extends Hero {
-    constructor(name, xp, weapon) {
-        super(name, xp);
-        this.weapon = weapon;
-    }
+// class Warrior extends Hero {
+//     constructor(name, xp, weapon) {
+//         super(name, xp);
+//         this.weapon = weapon;
+//     }
 
-    attack() {
-        console.log(`${this.name}`)
-    }
-}
+//     attack() {
+//         console.log(`${this.name}`)
+//     }
+// }
 
-class Mage extends Hero {
-    constructor(name, xp, spells = []) {
-        super(name, xp);
-        this.spells = this.spells;
-    }
-}
+// class Mage extends Hero {
+//     constructor(name, xp, spells = []) {
+//         super(name, xp);
+//         this.spells = this.spells;
+//     }
+// }
 
-const mango = new Warrior({name: 'mango', xp: 1000, weapon:'алебарда'} );
-console.log(mango);
+// const mango = new Warrior({name: 'mango', xp: 1000, weapon:'алебарда'} );
+// console.log(mango);
 
-const poly = new Mage({ name: 'poly', xp: 500, spells: ['mase'] });
-console.log(mango);
+// const poly = new Mage({ name: 'poly', xp: 500, spells: ['mase'] });
+// console.log(mango);
 
 
 
@@ -167,3 +167,35 @@ console.log(mango);
 // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+
+
+
+
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
+  getItems() {
+    return this.items;
+  }
+  addItem(newItem) {
+    return this.items.push(newItem);
+  }
+  removeItem(itemToRemove) {
+    const newarr = [];
+    for (const argument of this.items) {
+      if (argument.includes(itemToRemove)) {
+        continue;
+      }
+      newarr.push(argument);
+    }
+    return newarr;
+  }
+}
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
