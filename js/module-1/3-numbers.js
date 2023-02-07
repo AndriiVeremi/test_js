@@ -69,6 +69,8 @@
 // const result = Math.pow(numb, stepen);  // ----> перетворює в степен
 // console.log(result);  // ----> виводить в консоль
 
+
+
 // // або
 
 // let numb = prompt('веддіть число');

@@ -191,27 +191,72 @@
 
 
 
-class Car {
-    static #MAX_PRICE = 50000;
+// class Car {
+//     static #MAX_PRICE = 50000;
+//     // Change code below this line
+
+
+//     checkPrice(price) {
+//         if (newPrice > Car.#MAX_PRICE) {
+//             return "Error! Price exceeds the maximum"
+//         }
+//         return "Success! Price is within acceptable limits"
+//     }
+
+
+//     // Change code above this line
+//     constructor({ price }) {
+//         this.price = price;
+//     }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+// class Storage {
+//     constructor(items) {
+//         this.items = items;
+//     }
+//     getItems() {
+//         return this.items;
+//     };
+//     addItem(newItem) {
+//         return this.items.push(newItem);
+//     };
+//     removeItem(itemToRemove) {
+//         return this.items = this.items.filter((item) => item !== itemToRemove);
+//     };
+// };
+
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+
+function changeEven(numbers, value) {
     // Change code below this line
 
 
-    checkPrice(price) {
-        if (newPrice > Car.#MAX_PRICE) {
-            return "Error! Price exceeds the maximum"
+    const newArray = [];
+
+    numbers.forEach(number => {
+        if (number % 2 === 0) {
+            newArray.push(number + value);
+        } else {
+            newArray.push(number)
         }
-        return "Success! Price is within acceptable limits"
-    }
 
-
+    });
+    return newArray
     // Change code above this line
-    constructor({ price }) {
-        this.price = price;
-    }
 }
 
-const audi = new Car({ price: 36000 });
-const bmw = new Car({ price: 64000 });
-
-console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
-console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+console.log(changeEven([2, 8, 3, 7, 4, 6], 10)) 

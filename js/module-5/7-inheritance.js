@@ -3,24 +3,42 @@
 //  - super()
 
 
-// class Hero {
-//     constructor({name = 'hero', xp = 0} = {}) {
-//         this.name = name;
-//         this.xp = xp;
-//     }
-//     gainXp(amount) {
-//         this.xp += amount;
-//     }
-// }
+class Hero {
+    constructor(name = 'hero', xp = 0) {
+        this.name = name;
+        this.xp = xp;
+    }
+    gainXp(amount) {
+        this.xp += amount;
+    }
+}
 
-// class Warrior extends Hero {
-//     constructor() {
-//         super();
-//     }
-// }
+class Warrior extends Hero {
+    constructor(name, xp, weapon) {
+        super(name, xp);
+        this.weapon = weapon;
+    }
 
-// const mango = new Warrior({ name: 'mango', xp: 1000 });
-// console.log(mango);
+    attack() {
+        console.log(`${this.name}`)
+    }
+}
+
+class Mage extends Hero {
+    constructor(name, xp, spells = []) {
+        super(name, xp);
+        this.spells = this.spells;
+    }
+}
+
+const mango = new Warrior({name: 'mango', xp: 1000, weapon:'алебарда'} );
+console.log(mango);
+
+const poly = new Mage({ name: 'poly', xp: 500, spells: ['mase'] });
+console.log(mango);
+
+
+
 
 
 // ------------------- Приклади -------------------------------------------------
@@ -97,55 +115,55 @@
 //---------------------------------------
 
 
-class User {
-    email;
+// class User {
+//     email;
 
-    constructor(email) {
-        this.email = email;
-    }
+//     constructor(email) {
+//         this.email = email;
+//     }
 
-    get email() {
-        return this.email;
-    }
+//     get email() {
+//         return this.email;
+//     }
 
-    set email(newEmail) {
-        this.email = newEmail;
-    }
-}
-class Admin extends User {
-    // Change code below this line
+//     set email(newEmail) {
+//         this.email = newEmail;
+//     }
+// }
+// class Admin extends User {
+//     // Change code below this line
 
-    static AccessLevel = {
-        BASIC: "basic",
-        SUPERUSER: "superuser",
-    };
+//     static AccessLevel = {
+//         BASIC: "basic",
+//         SUPERUSER: "superuser",
+//     };
 
-    blacklistedEmails = [];
+//     blacklistedEmails = [];
 
-    constructor({ email, accessLevel }) {
-        super(email);
-        this.accessLevel = accessLevel;
-    }
+//     constructor({ email, accessLevel }) {
+//         super(email);
+//         this.accessLevel = accessLevel;
+//     }
 
-    blacklist(email) {
-        this.blacklistedEmails.push(email);
-    }
+//     blacklist(email) {
+//         this.blacklistedEmails.push(email);
+//     }
 
-    isBlacklisted(email) {
-        return this.blacklistedEmails.includes(email);
-    }
-    // Change code above this line
-}
+//     isBlacklisted(email) {
+//         return this.blacklistedEmails.includes(email);
+//     }
+//     // Change code above this line
+// }
 
-const mango = new Admin({
-    email: "mango@mail.com",
-    accessLevel: Admin.AccessLevel.SUPERUSER,
-});
+// const mango = new Admin({
+//     email: "mango@mail.com",
+//     accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true

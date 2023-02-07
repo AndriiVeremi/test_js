@@ -75,3 +75,15 @@
 // }
 
 // console.log('сума чьотних чисел', total);
+
+
+function numberToString(num) {
+    // Return a string of the number here!
+
+    return Number.toLocaleString(num)
+
+}
+
+numberToString(67)
+
+console.log(numberToString)
