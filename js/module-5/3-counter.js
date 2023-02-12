@@ -21,3 +21,10 @@ incrementBtn.addEventListener('click', function () {
     counter.increment();
     valueEl.textContent = counter.value;
 })
+
+
+//       <div div class="couter" >
+//       <button class="js-decrement">зменшити</button>
+//       <p class="js-value">0</p>
+//       <button class="js-increment">зменшити</button>
+//       </div >

@@ -7,9 +7,9 @@
 // //     - властивість Function.prototype
 
 // const Car = function ({ brand, model, price } = { }) { // це функція конструктор \клас\ ( назва функції повинна бути з великої букви і в одинарному)
-    // this.brand = brand;
-    // this.model = model;
-    // this.price = price;
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
 //     // функція визивається в контексті створеного обєкта (new Car) тобто this буде звертатись до (new Car)
 // };
 
@@ -40,7 +40,7 @@
 
 // myCar.changePrice(10000);
 
-//-----------------------------------------------
+// -----------------------------------------------
 
 // const User = function ({ email, password } = {}) {
 //     this.email = email;
