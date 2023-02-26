@@ -46,34 +46,17 @@ changeColor             // undefided
 changeHatColor();       //color: "orange"
 changeSweaterColor();   //color: "blue"
 
+//=======================--------------------------===================
+//  методи call і apply для примусового виклику функції в контексті обєкта
 
-// counter ------
-
-// const counter = {
-//     value: 0,
-//     increment(value) {
-//         this.value += value;
-//     },
-//     decrement(value) {
-//         this.value -= value;
-//     },
-// };
-
-// const updateCounter = function (value, operation) {
-//     operation(value);
-// };
-
-// updateCounter(10, couter.increment.bind(counter));       // ok
-// updateCounter(10, couter.decrement);                    // undefided
-
-//-----------
-
-const counter2 = {
-    value: 0,
-    increment(value) {
-        this.value += value;
-    },
-    decrement(value) {
-        this.value -= value;
-    },
+const showThis = function (...agrs) {
+    console.log(agrs)
 };
+
+const objA = {
+    a: 5,
+    b: 10,
+};
+
+showThis.call(objA, 5, 1, 2);   // примусово викликаю функцію в контексті обєкта
+showThis.apply(objA, [5, 1, 2]); // те саме що і  саll але аргументи передаються масивом
