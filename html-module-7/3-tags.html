@@ -5,6 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 8px;
+            background-color: #fff;
+            list-style: none;
+        }
+        .tags__item {
+            margin: 4px;
+        }
+        .tags__btn {
+            border: 1px solid #212121;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 4px 10px 4px;
+            font-size: 24px;
+            color: #212121;
+            text-decoration: none;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .tags__btn--active {
+            color: #fff;
+            background-color: bisque;
+        }
+    </style>
 </head>
 <body>
     <ul class="tags js-tags">
