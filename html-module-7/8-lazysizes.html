@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .feed {
+        list-style: none;
+      }
+      .feed img {
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all 500ms linear;
+        width: 640;
+        height: 480;
+      }
+      .feed img.appear {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="feed">
+      <li class="feed__item">
+        <img
+          src="https://picsum.photos/id/1/200/300"          
+          width="640"
+          height="480"
+          alt="asd"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur dolorem
+          esse voluptas at quibusdam nulla rerum quas voluptatem. Vitae, sequi. Quia quis sint animi
+          assumenda mollitia velit fuga aut?
+        </p>
+      </li>
+
+      <li class="feed__item">
+        <img
+          src="https://picsum.photos/id/1/200/300"
+          width="640"
+          height="480"
+          alt="asd2"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur dolorem
+          esse voluptas at quibusdam nulla rerum quas voluptatem. Vitae, sequi. Quia quis sint animi
+          assumenda mollitia velit fuga aut?
+        </p>
+      </li>
+
+      <li class="feed__item">
+        <img
+          src="https://picsum.photos/200/300"
+          width="640"
+          height="480"
+          alt="asd3"
+        />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eos saepe nesciunt
+          enim illum facilis officiis sed nihil quasi omnis! Nesciunt maxime deleniti alias tempore
+          iusto numquam assumenda nulla odit.
+        </p>
+      </li>
+      <li class="feed__item">
+        <img
+          src="https://picsum.photos/200/300"
+          width="640"
+          height="480"
+          alt="asd4"
+        />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eos saepe nesciunt
+          enim illum facilis officiis sed nihil quasi omnis! Nesciunt maxime deleniti alias tempore
+          iusto numquam assumenda nulla odit.
+        </p>
+      </li>
+      <li class="feed__item">
+        <img
+          src="https://picsum.photos/200/300"
+          width="640"
+          height="480"
+          alt="asd5"
+        />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eos saepe nesciunt
+          enim illum facilis officiis sed nihil quasi omnis! Nesciunt maxime deleniti alias tempore
+          iusto numquam assumenda nulla odit.
+        </p>
+      </li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+    <script src="/js/module-7/8-lazysizes.js" type="module"></script>
+  </body>
+</html>

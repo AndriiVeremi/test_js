@@ -11,6 +11,7 @@
 //     backdrop: document.querySelector('.js-backdrop'),
 // };
 
+
 // refs.openModalBtn.addEventListener('click', onOpenModal)
 // refs.closeModalBtn.addEventListener('click', onCloseModal)
 // refs.backdrop.addEventListener('click', onBackdropClick)
@@ -27,24 +28,20 @@
 // }
 
 // function onBackdropClick(event) {
-//     console.log('клаік по бекдропу')
-    
+//     console.log('клаік по бекдропу')    
 //     console.log(event.currentTarget);  // таргет по бекдропу
 //     console.log(event.target)         //  таргет на сам елемент
 
 //     if (event.currentTarget === event.target) {
 //         console.log('клікнули в сам бекдроп')
-
 //         onCloseModal();
 //     }
 // }
 
 // function onEscKeyPress(event) {
-
 //     console.log(event.code)
 
 //     const ESC_KEY_CODE = 'Escape';
-
 //     if (event.code === ESC_KEY_CODE) {
 //         onCloseModal();
 //     }
@@ -62,7 +59,7 @@ function makeArray(firstArray, secondArray, maxLength) {
 
     // Change code above this line
 }
+
 makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)
 
 
-length
