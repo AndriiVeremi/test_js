@@ -50,6 +50,7 @@ const colorPickerOptions = [
 //----------------- через map() ----------------------------------
 
 // const elements = colorPickerOptions.map(option => {
+    
 //     const buttonEl = document.createElement('button');
 //     buttonEl.type = 'button';
 //     buttonEl.classList.add('color-picker__option');

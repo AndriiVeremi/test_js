@@ -26,6 +26,10 @@
 //     console.log('Клік')
 // }
 
+document.addEventListener("keydown", event => {
+    console.log("Keydown: ", event);
+});
+
 
 // -----------------------------------------------------------------
 
